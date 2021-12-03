@@ -1,0 +1,30 @@
+ <form class="row g-2 d-flex">
+    <div class="row g-3 d-flex justify-content-around">
+        <div class="col">
+          <label for="cep">Digite o Cep:</label>
+          <input type="text" class="form-control input__dados" name="cep" [(ngModel)]="ceps" mask='00.000-000'
+           placeholder="00.000-000" id="cep" autofocus (input)="buscarCeps(ceps)">
+        </div>
+
+        <div class="col">
+            <label for="cidade">Cidade:</label>
+          <input type="text" class="form-control input__dados" 
+           id="cidade" type="text" name="cidade" value="{{localidades}}">
+        </div>
+
+        <div class="col">
+            <label for="estados">Estado:</label>
+          <input type="text" class="form-control input__dados" id="estados" type="text" value="{{estados}}">
+        </div>
+
+        <div class="col">
+            <label for="bairros">Bairro:</label>
+          <input type="text" class="form-control input__bairro" id="bairros" type="text" value="{{bairros}}">
+        </div>
+        
+        <div class="col">
+            <label for="logradouros">Logradouro:</label>
+          <input type="text" class="form-control input__logradouro" id="logradouros" type="text" value="{{logradouros}}">
+        </div>
+    </div>
+ </form>

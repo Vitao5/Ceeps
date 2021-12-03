@@ -1,0 +1,12 @@
+.input__dados{
+    width: 12rem;
+    border-radius: 45px;
+}
+
+.input__bairro, .input__logradouro{
+    width: 15rem;
+    border-radius: 45px;
+}
+
+
+
